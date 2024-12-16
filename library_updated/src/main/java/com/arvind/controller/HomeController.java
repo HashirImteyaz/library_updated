@@ -91,6 +91,10 @@ public class HomeController {
 	public String loadEmpSave() {
 		return "emp_save";
 	}
+	@GetMapping("/home")
+	public String home() {
+		return "landing";
+	}
 
 	@GetMapping("/logout")
 	public String logout(HttpSession session) {

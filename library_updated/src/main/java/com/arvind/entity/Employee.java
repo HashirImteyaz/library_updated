@@ -22,13 +22,13 @@ public class Employee {
 
 	private String address;
 
-	private String gender;
+	private String available;
 
 	private String password;
 
 	// @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	// @JoinColumn(name = "user_id")
-    // private User user;
+	// private User user;
 
 	public int getId() {
 		return id;
@@ -62,12 +62,12 @@ public class Employee {
 		this.address = address;
 	}
 
-	public String getGender() {
-		return gender;
+	public String getAvailable() {
+		return available;
 	}
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setAvailable(String available) {
+		this.available = available;
 	}
 
 	public String getPassword() {
@@ -80,8 +80,8 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", address=" + address + ", gender="
-				+ gender + ", password=" + password + "]";
+		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", address=" + address + ", available="
+				+ available + ", password=" + password + "]";
 	}
 
 }
