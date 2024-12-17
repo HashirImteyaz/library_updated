@@ -10,7 +10,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Employee {
+public class journals {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -80,7 +80,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", address=" + address + ", available="
+		return "Journal [id=" + id + ", name=" + name + ", email=" + email + ", address=" + address + ", available="
 				+ available + ", quantity=" + quantity + "]";
 	}
 

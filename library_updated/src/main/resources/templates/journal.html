@@ -3,7 +3,7 @@
 	th:replace="~{ base :: layout(~{::title} , ~{::section}) }">
 <head>
 <meta charset="ISO-8859-1">
-<title>Index Page</title>
+<title>Journal Page</title>
 </head>
 <body>
 	<section>
@@ -11,7 +11,7 @@
 			<div class="row">
 				<div class="col-md-10 offset-md-1">
 					<div class="card">
-						<div class="card-header text-center fs-4">Library Details</div>
+						<div class="card-header text-center fs-4">Journal Details</div>
 						<th:block th:if="${session.msg}">
 							<p class="text-center text-success fs-4">[[${session.msg}]]</p>
 							<th:block th:text="${@empServiceImpl.removeSessionMessage()}"></th:block>
@@ -21,9 +21,9 @@
 								<thead>
 									<tr>
 										<th scope="col">Id</th>
-										<th scope="col">Author Name</th>	
+										<th scope="col">Author Name</th>
 										<th scope="col">Email</th>
-										<th scope="col">Book Name</th>
+										<th scope="col">Journal Name</th>
 										<th scope="col">Available</th>
 										<th scope="col">Quantity</th>
 										<th scope="col">Action</th>

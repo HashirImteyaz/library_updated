@@ -76,7 +76,7 @@ public class HomeController {
 			return "index";
 		} else {
 			model.addAttribute("errorMsg", "Email id and password didn't match!!");
-			return "login";
+			return "login_error";
 		}
 	}
 
@@ -91,6 +91,7 @@ public class HomeController {
 	public String loadEmpSave() {
 		return "emp_save";
 	}
+
 	@GetMapping("/home")
 	public String home() {
 		return "landing";
@@ -100,6 +101,12 @@ public class HomeController {
 	public String logout(HttpSession session) {
 		session.invalidate(); // Invalidate the session
 		return "redirect:/loginPage"; // Redirect to login
+	}
+
+	@GetMapping("/journal")
+	public String journal() {
+
+		return "journal"; // Redirect to login
 	}
 
 	@GetMapping("/EditEmp/{id}")
